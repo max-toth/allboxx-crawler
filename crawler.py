@@ -61,8 +61,24 @@ def main():
 def items():
     f = open('c_products.csv', 'w')
     for x in open('products.csv', 'r'):
-        f.write(AllBoxxParser.products(x + ';' + x.split(';')[3]))
+        f.write(x + ';' + AllBoxxParser.products(x.split(';')[3]))
     f.close()
 
 
-items()        
+def items4():
+    with open('products.csv') as f:
+        while True:
+            line1 = f.readline()
+            if not line1:
+                break
+            line2 = f.readline()
+            line3 = f.readline()
+            line4 = f.readline()
+            f.write(line1 + ';' + AllBoxxParser.products(line1.split(';')[3]))
+            f.write(line2 + ';' + AllBoxxParser.products(line2.split(';')[3]))
+            f.write(line3 + ';' + AllBoxxParser.products(line3.split(';')[3]))
+            f.write(line4 + ';' + AllBoxxParser.products(line4.split(';')[3]))
+            time.sleep(random.randint(1,3))
+            
+
+# items()        

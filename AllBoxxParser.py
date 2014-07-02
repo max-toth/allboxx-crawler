@@ -5,7 +5,6 @@ import AllBoxxHttp
 
 def products(url):
     time.sleep(random.randint(1,3))
-    print(url)
     html = AllBoxxHttp.get('http://xn--e1affjgipn8i.xn--p1ai' + url).read().decode('utf_8')
     page = document_fromstring(html)   
     title = page.get_element_by_id('page_title').text    
