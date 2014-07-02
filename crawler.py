@@ -61,7 +61,7 @@ def main():
 def items():
     f = open('c_products.csv', 'w')
     for x in open('products.csv', 'r'):
-        f.write(AllBoxxParser.products(x.split(';')[3]))
+        f.write(AllBoxxParser.products(x + ';' + x.split(';')[3]))
     f.close()
 
 
