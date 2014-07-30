@@ -33,8 +33,8 @@ class myThread (threading.Thread):
                 updated_line = url.replace('\n', '') + ";" +  AllBoxxParser.products(current_item)
                 print(current_item)
                 items.append(updated_line)
-            except Exception:
-                print(bcolors.FAIL + current_item + ' in Thread ' + self.name + bcolors.ENDC)
+            except Exception as e:
+                print(bcolors.FAIL + current_item + ' in Thread ' + self.name + bcolors.ENDC + ' ' + str(e))
                 self.urls.append(url)
                 time.sleep(5)
         f = open(self.name + '.csv', 'w')
