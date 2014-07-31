@@ -1,4 +1,22 @@
 var WebSocketServer = new require('ws');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/allboxx');
+var db = mongoose.connection;
+var userSchema;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function callback () {
+    userSchema = mongoose.Schema({
+      name: String,
+      phone: String,
+      uid: String
+    });
+
+    var User = mongoose.model('User', userSchema);
+    var user = new User({name: "test", phone: "1234", uid: guid()});
+    user.save();
+});
+// db.open();
+// db.close();
 // подключенные клиенты
 var clients = {};
 var activationKey = "ГОВНАРЬ";
