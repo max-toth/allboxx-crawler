@@ -2,7 +2,7 @@ var s;
 
 $(document).ready(function(){
 	try{	
-		s = new WebSocket("ws://10.0.102.53:8081/chat");	
+		s = new WebSocket("ws://localhost:8081/chat");
 		s.onopen = function (e) {
 			console.log("Socket opened.");
 		};
@@ -28,7 +28,8 @@ $(document).ready(function(){
 });
 
 function send() {
-	var msg = $('#message').val();
-	$('#message').val('');
+    const message = $('#message');
+    var msg = message.val();
+	message.val('');
 	s.send(msg);	
 }
