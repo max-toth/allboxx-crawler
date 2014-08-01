@@ -29,11 +29,11 @@ module.exports.guid = function () {
 };
 
 module.exports.hello = function (client) {
-    client.send("Здравствуйте, мы очень рады, что вы джонирнулись к нам! Как вас зовут?");
+    client.send("Allboxx: Здравствуйте, мы очень рады, что вы джонирнулись к нам! Как вас зовут?");
 };
 
 module.exports.getPhone = function (client, name) {
-    client.send("Отлично, " + name + "! Напишите, пожалуйста, номер телефона (в формате +Х(ХХХ)ХХХ-ХХ-ХХ), на который мы вышлем код подтверждения того, что вы действительно хотите чтобы мы серанули вам в голову?");
+    client.send("Allboxx: Отлично, " + name + "! Напишите, пожалуйста, номер телефона, на который мы вышлем код подтверждения.");
 };
 
 const prefix_7 = "7";
@@ -76,7 +76,7 @@ module.exports.twilioReg = function (phone, name) {
         to: phone,
         from: "+15083324849"
     }, function (err, message) {
-        console.log("error " + err);
-        console.log("twillo message " + message);
+        console.log("error ", err);
+        console.log("twillo message ", message);
     });
 };
