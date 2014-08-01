@@ -3,7 +3,6 @@ var logic = new require('./site/allboxx_logic');
 var WebSocketServer = new require('ws');
 // подключенные клиенты
 var clients = {};
-var activationKey = "ГОВНАРЬ";
 // WebSocket-сервер на порту 8081
 var webSocketServer = new WebSocketServer.Server({port: 8081});
 
@@ -13,7 +12,8 @@ webSocketServer.on('connection', function (ws) {
         id: utils.guid(),
         name: "",
         phone: "",
-        activated: false
+        activated: false,
+        code: utils.code()
     };
     clients[user.id] = ws;
 

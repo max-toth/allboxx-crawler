@@ -8,8 +8,8 @@ module.exports.run = function (user, message, client) {
         //первый ответ от клиента - его имя
         //похер что лежит в сообщении просто пишем его как имя
         user.name = message.charAt(0).toUpperCase() + message.slice(1);
-        user.messages.push(message);
-        client.send(message);
+        user.messages.push(user.name);
+        client.send(user.name);
         utils.getPhone(client, user.name);
         // clients[id].send(message);
     } else if (user.messages.length == 1) {
@@ -20,15 +20,19 @@ module.exports.run = function (user, message, client) {
             user.phone = utils.phoneProcessing(user.phone);
             user.messages.push(message);
             client.send(user.name + ": " + message);
-            client.send("Allboxx: Супер! Отправляем вам SMS с кодом активации...: " + message);
-            utils.twilioReg(user.phone, user.name);
+            client.send("Allboxx: Супер! Отправляем вам SMS с кодом активации на номер " + user.phone);
+            utils.twilioReg(user.phone, user.name, user.code);            
+            client.send("Allboxx: Готово! Сообщение улетело. Как только получите его сразу пишите нам код!");
         }
     } else if (user.messages.length == 2) {
+        console.log("user: ", user);
         // третье - код активации
-        if (message === utils.activationKey) {
+        if (message == user.code) {
             user.activated = true;
             client.send(user.name + ": " + message);
-            client.send("Allboxx: Это просто замечательно! Вы активировали вашу подписку! ВЫ НАСТОЯЩИЙ ГОВНАРЬ!!!!");
+            client.send("Allboxx: Это просто замечательно! Вы активировали вашу подписку!" +  
+                "В ближайшую минуту-две меня сменит живой человек. А пока вы можете начать писать все то, " +
+                "что хотели бы найти в нашей коробке после доставки ;) Удачи!");
             user.messages.push(message);
         }
     } else if (messages.length > 3) {

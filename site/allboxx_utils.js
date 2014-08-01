@@ -1,8 +1,6 @@
 /**
  * Created by max_tolstykh on 01/08/14.
  */
-this.activationKey = "ГОВНАРЬ";
-
 module.exports.phoneValidation = function (phone) {
     if (phone.length < 10) return false;
     return phone.match(/^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/gm);
@@ -20,6 +18,10 @@ this.history = function (id) {
  */
 this.S4 = function () {
     return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+};
+
+module.exports.code = function() {
+    return Math.floor(Math.random()*9000) + 1000;
 };
 
 // then to call it, plus stitch in '4' in the third group
@@ -65,14 +67,14 @@ this.strsta = function (string, prefix) {
     return string.substring(0, prefix.length) === prefix;
 };
 
-module.exports.twilioReg = function (phone, name) {
+module.exports.twilioReg = function (phone, name, code) {
     var accountSid = 'AC3ca6c387eb9a625ae00bcb58600df5ba';
     var authToken = "36956d4fd14b2943075a7fd0317184b6";
     var twilio = require('twilio');
     var client = new twilio.RestClient(accountSid, authToken);
 
     client.messages.create({
-        body: "Привет, " + name + "! Ваш код активации: " + this.activationKey,
+        body: "Привет, " + name + "! Ваш код активации: " + code,
         to: phone,
         from: "+15083324849"
     }, function (err, message) {
