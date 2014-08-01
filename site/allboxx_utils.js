@@ -1,7 +1,7 @@
 /**
  * Created by max_tolstykh on 01/08/14.
  */
-
+this.activationKey = "ГОВНАРЬ";
 
 module.exports.phoneValidation = function (phone) {
     if (phone.length < 10) return false;
@@ -72,7 +72,7 @@ module.exports.twilioReg = function (phone, name) {
     var client = new twilio.RestClient(accountSid, authToken);
 
     client.messages.create({
-        body: "Привет, " + name + "! Ваш код активации: " + activationKey,
+        body: "Привет, " + name + "! Ваш код активации: " + this.activationKey,
         to: phone,
         from: "+15083324849"
     }, function (err, message) {
