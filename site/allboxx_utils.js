@@ -63,7 +63,7 @@ module.exports.phoneProcessing = function (phone) {
     return phone;
 };
 
-this.strsta = function (string, prefix) {
+module.exports.strsta = function (string, prefix) {
     return string.substring(0, prefix.length) === prefix;
 };
 
