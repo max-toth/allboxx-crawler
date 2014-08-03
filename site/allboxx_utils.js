@@ -20,8 +20,8 @@ this.S4 = function () {
     return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
 };
 
-module.exports.code = function() {
-    return Math.floor(Math.random()*9000) + 1000;
+module.exports.code = function () {
+    return Math.floor(Math.random() * 9000) + 1000;
 };
 
 // then to call it, plus stitch in '4' in the third group
@@ -41,7 +41,7 @@ module.exports.getPhone = function (client, name) {
 const prefix_7 = "7";
 const prefix_8 = "8";
 
-module.exports.phoneTrim = function(phone) {
+module.exports.phoneTrim = function (phone) {
     phone = phone.replace(/\(/g, '');
     phone = phone.replace(/\)/g, '');
     phone = phone.replace(/-/g, '');
@@ -52,9 +52,9 @@ module.exports.phoneTrim = function(phone) {
 module.exports.phoneProcessing = function (phone) {
     if (this.strsta(phone, prefix_8) && phone.length == 11) {
         phone = "+7" + phone.substring(prefix_8.length);
-    } else if (phone.length == 10){
+    } else if (phone.length == 10) {
         phone = "+7" + phone;
-    } else if (this.strsta(phone, prefix_7) && phone.length == 11)  {
+    } else if (this.strsta(phone, prefix_7) && phone.length == 11) {
         phone = "+" + phone;
     }
 

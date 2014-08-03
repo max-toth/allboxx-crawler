@@ -2,6 +2,7 @@
  * Created by max_tolstykh on 01/08/14.
  */
 var utils = new require('./allboxx_utils');
+var db = new require('./allboxx_db');
 
 module.exports.run = function (user, message, client) {
     if (user.messages.length == 0) {
@@ -31,9 +32,13 @@ module.exports.run = function (user, message, client) {
             user.activated = true;
             client.send(user.name + ": " + message);
             client.send("Allboxx: Это просто замечательно! Вы активировали вашу подписку!" +  
-                "В ближайшую минуту-две меня сменит живой человек. А пока вы можете начать писать все то, " +
+                "Сейчас я схожу позову кого-нибудь из людей. А пока вы можете начать писать все то, " +
                 "что хотели бы найти в нашей коробке после доставки ;) Удачи!");
             user.messages.push(message);
+            db.connect();
+            db.save(user);
+            db.disconnect();
+            client.send("set:cookie:" + user.acc);
         }
     } else if (messages.length > 3) {
         user.messages.push(message);
