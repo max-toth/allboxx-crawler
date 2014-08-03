@@ -1,8 +1,15 @@
 {
     "name": "application-name",
     "version": "0.0.1",
+    "description": "allboxx chat",    
     "dependencies": {
         "mongoose": "3.8.14",
-        "ws": "0.4.31"
-    }
+        "ws": "0.4.31",
+        "twilio": "1.6.0"
+    },
+    "repository" : { 
+    	"type" : "git",
+   		"url" : "https://github.com/unlocked/allboxx-crawler.git"
+  	}
+
 }

@@ -24,7 +24,15 @@ webSocketServer.on('connection', function (ws) {
         user.code = utils.code();        
         clients[user.id] = ws;
         users[user.id] = user;
+        for (var key in users) {
+             c = users[key];   
+             if (c.operator) {
+                console.log("c", c);
+                clients[c.id].send("user.add.list:" + JSON.stringify(user));
+             }
+        }    
         utils.hello(ws);
+
     }
     
     console.log("новое соединение ", user);    
@@ -33,27 +41,42 @@ webSocketServer.on('connection', function (ws) {
         console.log('получено сообщение ' + message);        
         if (user.operator) {
             var prefix = "uid:";
-            utils.strsta(message, prefix);
-            user.id = message.substring(prefix.length)
-            clients[user.id] = ws;
-            console.log("operator", user.id);        
-            for (var key in users) {
-                 c = users[key];   
-                 if (!c.operator) {
-                    console.log("c", c);
-                    clients[user.id].send("userList:" + JSON.stringify(c));
-                 }
-            }
-            
+            if(utils.strsta(message, prefix)) {
+                user.id = message.substring(prefix.length)
+                clients[user.id] = ws;
+                users[user.id] = user;
+                console.log("operator", user.id);        
+                for (var key in users) {
+                     c = users[key];   
+                     if (!c.operator) {
+                        console.log("c", c);
+                        clients[user.id].send("user.add.list:" + JSON.stringify(c));
+                     }
+                }                
+            }            
         } else {
-            logic.run(user, message, client);    
+            logic.run(user, message, clients[user.id]);    
         }
-        
+        if (utils.strsta(message, "operator|")) {
+            message = message.substring("operator|".length);
+            var index = message.indexOf("|");
+            userId = message.substring(0, index);
+            message = message.substring(index+1);
+            console.log("message for " + userId);
+            clients[userId].send("Allboxx: " + message);
+        }
     });
 
     ws.on('close', function () {
         console.log('соединение закрыто ' + user.id + " " + user.name);
+        for (var key in users) {                
+                 if (users[key].operator && key != user.id) {                    
+                    console.log(users[key]);
+                    clients[key].send("user.del.list:" + user.id);
+                 }
+            }
         delete clients[user.id];
+        delete users[user.id];
     });
 });
 

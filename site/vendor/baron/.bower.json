@@ -1,0 +1,15 @@
+{
+  "name": "baron",
+  "homepage": "https://github.com/Diokuz/baron",
+  "version": "0.7.9",
+  "_release": "0.7.9",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.7.9",
+    "commit": "437f4c329480b2a033f93897c8642c62f2ab342f"
+  },
+  "_source": "git://github.com/Diokuz/baron.git",
+  "_target": "~0.7.9",
+  "_originalSource": "baron",
+  "_direct": true
+}
