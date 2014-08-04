@@ -4,7 +4,7 @@
 var utils = new require('./allboxx_utils');
 var db = new require('./allboxx_db');
 
-module.exports.run = function (user, message, client) {
+module.exports.run = function (user, message, client, clients, users) {
     if (user.messages.length == 0) {
         //первый ответ от клиента - его имя
         //похер что лежит в сообщении просто пишем его как имя
@@ -37,11 +37,25 @@ module.exports.run = function (user, message, client) {
             user.messages.push(message);
             db.connect();
             db.save(user);
+            for (var key in users) {
+                 c = users[key];   
+                 if (c.operator) {      
+                    console.log("user registered: "+ "{user.add.list:" + JSON.stringify(user) + "}")              
+                    clients[c.acc].send("user.add.list:" + JSON.stringify(user));
+                 }
+            }
             db.disconnect();
             client.send("set:cookie:" + user.acc);
         }
-    } else if (messages.length > 3) {
+    } else if (user.messages.length >= 3) {
+        console.log("just a message from")
         user.messages.push(message);
-        client.send(message);
+        client.send(user.name + ": " + message);                 
+        for (var key in users) {                
+        if (users[key].operator && key != user.acc) {
+            console.log(users[key]);
+            clients[key].send(user.acc +":" + user.name + ":" + message);
+            }
+        }        
     }
 };

@@ -1,8 +1,15 @@
 var s;
 
 $(document).ready(function () {
+
+    $("#message").keyup(function (e) {
+        if (e.keyCode == 13) {
+            send();
+        }
+    });
+
     try {
-        s = new WebSocket("ws://192.168.1.9:8081/chat");
+        s = new WebSocket("ws://10.0.102.53:8081/chat");
         s.onopen = function (e) {
             console.log("Socket opened.");
         };
@@ -15,18 +22,22 @@ $(document).ready(function () {
             console.log("Socket message:", e.data);
             var div = document.createElement("div");
             div.innerHTML = e.data;
-            var prefix = "Allboxx";
+            var prefix = "Allboxx:";
             var prefix_cookie = "set:cookie:";
 
             if (e.data.substring(0, prefix_cookie.length) === prefix_cookie) {
                 setCookie("allboxx", e.data.substring(prefix_cookie.length), 0x7FFFFFFF);
             } else if (e.data.substring(0, prefix.length) === prefix) {
                 div.setAttribute("class", "message message--allboxx");
+                $('#messages').append(div);
+                var m = document.getElementById("messages");
+                m.scrollTop = m.scrollHeight;
             } else {
                 div.setAttribute("class", "message");
-            }
-
-            $('#messages').append(div);
+                $('#messages').append(div);
+                var m = document.getElementById("messages");
+                m.scrollTop = m.scrollHeight;
+            }            
         };
 
         s.onerror = function (e) {
