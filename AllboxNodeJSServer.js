@@ -21,8 +21,6 @@ webSocketServer.on('connection', function (ws) {
         user.operator = true
     } else {
         user.acc = utils.guid();
-        user.name = "";
-        user.phone = "";
         user.activated = false;
         user.code = utils.code();
         clients[user.acc] = ws;
@@ -51,11 +49,12 @@ webSocketServer.on('connection', function (ws) {
         } else if (utils.strsta(message, "user:cookie:")) {
             console.log(message);
             var userId = message.substring("user:cookie:".length);
-            db.findUser(userId, function (err, result) {
+            db.findUser({acc: userId}, function (err, result) {
                 if (!err) {
                     if (result != undefined) {
                         clients[result.acc] = ws;
                         user = result;
+                        console.log(result.messages);
                         for (var i = 0; i < result.messages.length; i++) {
                             clients[result.acc].send(result.messages[i]);
                         }
@@ -79,7 +78,7 @@ webSocketServer.on('connection', function (ws) {
         } else if (utils.strsta(message, "user:new:")) {
             utils.hello(clients[user.acc], user);
         } else {
-            console.log(user.acc + user.name + " not operator: run logic...");
+            console.log(user.acc + user.name + "run logic...");
             logic.run(user, message, clients[user.acc], clients, users);
         }
     });

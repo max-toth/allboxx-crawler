@@ -30,13 +30,15 @@ module.exports.save = function (_user) {
     u.save();
 };
 
-module.exports.update = function (_user) {
+module.exports.updateUser = function (_user, callback) {
     if (this.user === undefined) {
         this.user = mongoose.model('User', UserSchema);
     }
-    var u = new this.user(_user);
-    u.update({"acc": _user.acc}, {messages: _user.messages}, function(err, res){
+//    var u = new this.user(_user);
+    this.user.update({acc: _user.acc}, {$set: {messages: _user.messages}}, function(err, num, raw){
         if (err) console.log(err);
+        console.log("update user message...");
+        callback(raw);
     })
 };
 
@@ -53,15 +55,14 @@ module.exports.connect = function () {
     UserSchema = mongoose.Schema(User);
 };
 
-module.exports.findUser = function (userId, callback) {
+module.exports.findUser = function (query, callback) {
     if (this.user === undefined) {
         this.user = mongoose.model('User', UserSchema);
     }
-    this.user.findOne({"acc": userId}, function (err, result) {
-        callback(null, result);
+    this.user.findOne(query, function (err, result) {
         !err
             ? callback(null, result)
-            : callback(true);
+            : callback(err);
     });
 };
 
@@ -70,7 +71,7 @@ module.exports.users = function (callback) {
         this.user = mongoose.model('User', UserSchema);
     }
     this.user.find(function (err, result) {
-        callback(null, result);
+//        callback(null, result);
         !err
             ? callback(null, result)
             : callback(true);

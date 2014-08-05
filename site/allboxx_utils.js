@@ -31,7 +31,7 @@ module.exports.guid = function () {
 };
 
 module.exports.hello = function (client, user) {
-    var msg = "Allboxx: Здравствуйте, мы очень рады, что вы джонирнулись к нам! Как вас зовут?";
+    var msg = "Allboxx: Здравствуйте, мы очень рады, что вы обратили на нас внимание! Как вас зовут?";
     user.messages.push(msg);
     client.send(msg);
 };
