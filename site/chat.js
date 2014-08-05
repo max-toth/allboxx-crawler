@@ -15,6 +15,8 @@ $(document).ready(function () {
             if (getCookie("allboxx") != undefined) {
                 userId = getCookie("allboxx");
                 s.send("user:cookie:" + userId);
+            } else {
+                s.send("user:new:");
             }
             console.log();
         };

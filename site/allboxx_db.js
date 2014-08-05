@@ -16,7 +16,7 @@ var User = {
 };
 
 var UserSchema;
-var user; 
+var user;
 /**
  *
  * @param _user
@@ -30,43 +30,51 @@ module.exports.save = function (_user) {
     u.save();
 };
 
+module.exports.update = function (_user) {
+    if (this.user === undefined) {
+        this.user = mongoose.model('User', UserSchema);
+    }
+    var u = new this.user(_user);
+    u.update({"acc": _user.acc}, {messages: _user.messages}, function(err, res){
+        if (err) console.log(err);
+    })
+};
+
 module.exports.save_collection = function (_collection) {
-    for (var key in _collection) {        
+    for (var key in _collection) {
         var u = new user(_collection[key]);
         u.save();
     }
 };
 
 module.exports.connect = function () {
-    if (db === undefined) {
-        mongoose.connect('mongodb://localhost/allboxx');
-        db = mongoose.connection;
-        UserSchema = mongoose.Schema(User);
-    }
+    mongoose.connect('mongodb://localhost/allboxx');
+    db = mongoose.connection;
+    UserSchema = mongoose.Schema(User);
 };
 
 module.exports.findUser = function (userId, callback) {
     if (this.user === undefined) {
         this.user = mongoose.model('User', UserSchema);
-    }          
-    this.user.findOne({"acc": userId}, function(err, result){        
+    }
+    this.user.findOne({"acc": userId}, function (err, result) {
         callback(null, result);
         !err
             ? callback(null, result)
             : callback(true);
-    });        
+    });
 };
 
-module.exports.users = function (callback) {  
+module.exports.users = function (callback) {
     if (this.user === undefined) {
         this.user = mongoose.model('User', UserSchema);
-    }          
-    this.user.find(function(err, result){        
+    }
+    this.user.find(function (err, result) {
         callback(null, result);
         !err
             ? callback(null, result)
             : callback(true);
-    });        
+    });
 };
 
 

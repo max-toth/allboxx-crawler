@@ -30,12 +30,16 @@ module.exports.guid = function () {
         + "-" + this.S4() + "-" + this.S4() + this.S4() + this.S4()).toLowerCase();
 };
 
-module.exports.hello = function (client) {
-    client.send("Allboxx: Здравствуйте, мы очень рады, что вы джонирнулись к нам! Как вас зовут?");
+module.exports.hello = function (client, user) {
+    var msg = "Allboxx: Здравствуйте, мы очень рады, что вы джонирнулись к нам! Как вас зовут?";
+    user.messages.push(msg);
+    client.send(msg);
 };
 
-module.exports.getPhone = function (client, name) {
-    client.send("Allboxx: Отлично, " + name + "! Напишите, пожалуйста, номер телефона, на который мы вышлем код подтверждения.");
+module.exports.getPhone = function (client, user) {
+    var msg = "Allboxx: Отлично, " + user.name + "! Напишите, пожалуйста, номер телефона, на который мы вышлем код подтверждения.";
+    user.messages.push(msg);
+    client.send(msg);
 };
 
 const prefix_7 = "7";
