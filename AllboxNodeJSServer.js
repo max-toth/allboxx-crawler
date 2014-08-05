@@ -10,7 +10,9 @@ var users = {};
 // WebSocket-сервер на порту 8081
 var webSocketServer = new WebSocketServer.Server({port: 8081});
 try {
+
     webSocketServer.on('connection', function (ws) {
+        
         console.log("ws", ws.upgradeReq.headers.Cookie);
         var user = {
             messages: []            
@@ -25,50 +27,59 @@ try {
             user.activated = false;
             user.code = utils.code();        
             clients[user.acc] = ws;
-            users[user.acc] = user;            
-            utils.hello(ws);
+            users[user.acc] = user;                        
         }
         
         console.log("новое соединение ", user);    
 
         ws.on('message', function (message) {
+            db.connect();
             console.log('получено сообщение ' + message);        
-            if (user.operator) {
-                var prefix = "uid:";
-                if(utils.strsta(message, prefix)) {
-                    user.acc = message.substring(prefix.length)
+
+            if(utils.strsta(message, "uid:")) {                
+                if (user.operator) {
+                    user.acc = message.substring("uid:".length)
                     clients[user.acc] = ws;
                     users[user.acc] = user;
                     console.log("operator", user.acc);    
-                    db.connect();                        
+                    db.connect();                    
                     db.users(function(err, result){
                         if (!err) {
-                            console.log(result);
-                            clients[user.acc].send("user.list:" + JSON.stringify(result));    
+                            // console.log(result);
+                            if(result != undefined)
+                                clients[user.acc].send("user.list:" + JSON.stringify(result));    
                         }                        
-                    });
-                    
-                    
-                    // for (var key in users) {
-                    //      c = users[key];   
-                    //      if (!c.operator) {
-                    //         console.log("c", c);
-                    //         clients[user.acc].send("user.add.list:" + JSON.stringify(c));
-                    //      }
-                    // }                
+                    });               
                 }            
-            } else {
-                console.log(user.acc + user.name + " not operator: run logic...");
-                logic.run(user, message, clients[user.acc], clients, users);
-            }
-            if (utils.strsta(message, "operator|")) {
+            } else if(utils.strsta(message, "user:cookie:")) {
+                var userId = message.substring("user:cookie:".length);
+                db.findUser(userId, function(err, result){
+                    if (!err) {                        
+                        if(result != undefined){
+                            clients[result.acc] = ws;
+                            user = result;
+                            for (var i = 0; i < result.messages.length ; i++) {
+                                clients[result.acc].send(result.messages[i]);
+                            }
+                        }
+                    }
+                });                                                
+            } else if (utils.strsta(message, "operator|")) {
                 message = message.substring("operator|".length);
                 var index = message.indexOf("|");
                 userId = message.substring(0, index);
                 message = message.substring(index+1);
                 console.log("message for " + userId);
                 user.messages.push(message);
-                clients[userId].send("Allboxx: " + message);
+                if (clients[userId] != undefined) {
+                    clients[userId].send("Allboxx: " + message);
+                }                
+            } else {
+                console.log(user.acc + user.name + " not operator: run logic...");
+                if (user.messages.length ==0) {
+                    utils.hello(ws);    
+                }                
+                logic.run(user, message, clients[user.acc], clients, users);
             }
         });
 

@@ -1,5 +1,5 @@
 var s;
-
+var userId;
 $(document).ready(function () {
 
     $("#message").keyup(function (e) {
@@ -12,6 +12,11 @@ $(document).ready(function () {
         s = new WebSocket("ws://10.0.102.53:8081/chat");
         s.onopen = function (e) {
             console.log("Socket opened.");
+            if (getCookie("allboxx") != undefined) {
+                userId = getCookie("allboxx");
+                s.send("user:cookie:" + userId);
+            }
+            console.log();
         };
 
         s.onclose = function (e) {
@@ -89,3 +94,10 @@ $("#message").keypress(function (event) {
         send();
     }
 });
+
+
+function getCookie(name) {
+  var value = "; " + document.cookie;
+  var parts = value.split("; " + name + "=");
+  if (parts.length == 2) return parts.pop().split(";").shift();
+}

@@ -38,13 +38,23 @@ module.exports.save_collection = function (_collection) {
 };
 
 module.exports.connect = function () {
-    mongoose.connect('mongodb://localhost/allboxx');
-    db = mongoose.connection;
-    UserSchema = mongoose.Schema(User);
+    if (db === undefined) {
+        mongoose.connect('mongodb://localhost/allboxx');
+        db = mongoose.connection;
+        UserSchema = mongoose.Schema(User);
+    }
 };
 
-module.exports.init = function () {
-
+module.exports.findUser = function (userId, callback) {
+    if (this.user === undefined) {
+        this.user = mongoose.model('User', UserSchema);
+    }          
+    this.user.findOne({"acc": userId}, function(err, result){        
+        callback(null, result);
+        !err
+            ? callback(null, result)
+            : callback(true);
+    });        
 };
 
 module.exports.users = function (callback) {  
@@ -63,6 +73,3 @@ module.exports.users = function (callback) {
 module.exports.disconnect = function () {
     mongoose.connection.close()
 };
-
-
-
