@@ -42,21 +42,19 @@ module.exports.run = function (user, message, client, clients, users, msgCount) 
                                 "Будьте добры посмотрите еще раз в то сообщение, что мы Вам послали в первый раз. \n " +
                                 "Код подтверждения будет Вашим паролем. \nЕсли все верно то Вы увидете ваши прошлые сообщения.");
                             msgCount += 2;
+                        } else if (user._id == undefined) {
+                            user.messages.push(user.name + ": " + message);
+                            client.send(user.name + ": " + message);
+                            var msg1 = "Allboxx: Супер! Отправляем вам SMS с кодом активации на номер " + user.phone;
+                            user.messages.push(msg1);
+                            client.send(msg1);
+                            utils.twilioReg(user.phone, user.name, user.code);
+                            var msg2 = "Allboxx: Готово! Сообщение улетело. Как только получите его сразу пишите нам код!";
+                            user.messages.push(msg2);
+                            client.send(msg2);
                         }
                     console.log("Finded user", user);
                 });
-
-                if (user._id == undefined) {
-                    user.messages.push(user.name + ": " + message);
-                    client.send(user.name + ": " + message);
-                    var msg1 = "Allboxx: Супер! Отправляем вам SMS с кодом активации на номер " + user.phone;
-                    user.messages.push(msg1);
-                    client.send(msg1);
-                    utils.twilioReg(user.phone, user.name, user.code);
-                    var msg2 = "Allboxx: Готово! Сообщение улетело. Как только получите его сразу пишите нам код!";
-                    user.messages.push(msg2);
-                    client.send(msg2);
-                }
             }
         }
     } else if (user.messages.length == 6) {
