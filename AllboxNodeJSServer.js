@@ -95,6 +95,8 @@ webSocketServer.on('connection', function (ws) {
                 db.updateUser(user, function (err, res) {
                     console.log(res);
                 });
+            } else {
+                clients[user.acc].send("user.disconnected:" + userId);
             }
         } else if (utils.strsta(message, "user:new:")) {
             utils.hello(clients[user.acc], user);
@@ -108,8 +110,8 @@ webSocketServer.on('connection', function (ws) {
         console.log('соединение закрыто ' + user.acc + " " + user.name);
         for (var key in users) {
             if (users[key].operator && key != user.acc) {
-                console.log(users[key]);
-                clients[key].send("user.disconnected:" + user);
+//                console.log(users[key]);
+
             }
         }
         delete this.user;

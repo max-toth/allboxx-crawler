@@ -73,7 +73,7 @@ module.exports.run = function (user, message, client, clients, users, auth) {
                 var c = users[key];
                 if (c.operator) {
                     console.log("user registered: " + "{user.add.list:" + JSON.stringify(user) + "}")
-                    clients[c.acc].send("user.add.list:" + JSON.stringify(user));
+                    clients[c.acc].send("user.user.connected:" + JSON.stringify(user));
                 }
             }
             client.send("set:cookie:" + user.acc);
