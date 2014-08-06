@@ -77,7 +77,7 @@ webSocketServer.on('connection', function (ws) {
             if (clients[userId] != undefined) {
                 clients[userId].send("Allboxx: " + message);
             }
-            db.updateUser(user, function (err, res) {
+            db.updateUser(users[userId], function (err, res) {
                 console.log(res);
             });
         } else if (utils.strsta(message, "user:new:")) {
