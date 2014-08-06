@@ -44,6 +44,7 @@ webSocketServer.on('connection', function (ws) {
                     if (!err) {
                         // console.log(result);
                         if (result != undefined) {
+                            console.log(clients);
                             console.log("user.list: " + "{user.list:" + JSON.stringify(result.length) + "}");
                             ws.send("user.list:" + JSON.stringify(result));
                         }
