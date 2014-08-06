@@ -8,7 +8,7 @@ var findedUser;
 module.exports.run = function (user, message, client, clients, users) {
     console.log("messageCount=" + msgCount);
 
-    if (msgCount === 5) {
+    if (user.activated) {
         console.log(user);
         if (message == user.code) {
             for (var i = 0; i < user.messages.length; i++) {
