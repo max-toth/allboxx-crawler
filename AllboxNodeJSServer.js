@@ -12,7 +12,7 @@ var webSocketServer = new WebSocketServer.Server({port: 8081});
 db.connect();
 webSocketServer.on('connection', function (ws) {
 
-    console.log("ws", ws.upgradeReq.headers.Cookie);
+//    console.log("ws", ws.upgradeReq.headers.Cookie);
     var user = {
         messages: []
     };

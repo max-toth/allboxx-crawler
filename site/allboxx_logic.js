@@ -17,7 +17,7 @@ module.exports.run = function (user, message, client, clients, users, msgCount) 
         client.send(user.name + ": " + user.name);
         utils.getPhone(client, user);
         console.log(user);
-        msgCount += 2;
+        msgCount = 3;
     } else if (user.messages.length == 3) {
         // второе сообщение - телефон
         user.phone = utils.phoneTrim(message);
@@ -41,7 +41,7 @@ module.exports.run = function (user, message, client, clients, users, msgCount) 
                             client.send("Allboxx: Вижу Вы уже были у нас ;) \n " +
                                 "Будьте добры посмотрите еще раз в то сообщение, что мы Вам послали в первый раз. \n " +
                                 "Код подтверждения будет Вашим паролем. \nЕсли все верно то Вы увидете ваши прошлые сообщения.");
-                            msgCount += 2;
+                            msgCount = 5;
                         } else if (user._id == undefined) {
                             user.messages.push(user.name + ": " + message);
                             client.send(user.name + ": " + message);
@@ -79,7 +79,7 @@ module.exports.run = function (user, message, client, clients, users, msgCount) 
             }
             client.send("set:cookie:" + user.acc);
         }
-    } else if (user.messages.length >=8 ) {
+    } else if (user.messages.length >=8 && msgCount == 0 ) {
         console.log("just a message from " + user.name + " " + user.acc + " " + user.phone);
         user.messages.push(user.name + ": " + message);
         client.send(user.name + ": " + message);
