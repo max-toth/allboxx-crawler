@@ -32,6 +32,8 @@ webSocketServer.on('connection', function (ws) {
     ws.on('message', function (message) {
         console.log('получено сообщение ' + message);
 
+        var msgCount = 1;
+
         if (utils.strsta(message, "uid:")) {
             if (user.operator) {
                 user.acc = message.substring("uid:".length)
@@ -79,7 +81,7 @@ webSocketServer.on('connection', function (ws) {
             utils.hello(clients[user.acc], user);
         } else {
             console.log(user.acc + user.name + "run logic...");
-            logic.run(user, message, clients[user.acc], clients, users);
+            logic.run(user, message, clients[user.acc], clients, users, msgCount);
         }
     });
 

@@ -3,21 +3,10 @@
  */
 var utils = new require('./allboxx_utils');
 var db = new require('./allboxx_db');
-var msgCount = 1;
+
 var findedUser;
-module.exports.run = function (user, message, client, clients, users) {
+module.exports.run = function (user, message, client, clients, users, msgCount) {
     console.log("messageCount=" + msgCount);
-
-    if (user.activated) {
-        console.log(user);
-        if (message == user.code) {
-            for (var i = 0; i < user.messages.length; i++) {
-                clients[user.acc].send(user.messages[i]);
-            }
-        }
-
-        return;
-    }
 
     if (user.messages.length == 1) {
         //первый ответ от клиента - его имя
@@ -101,6 +90,17 @@ module.exports.run = function (user, message, client, clients, users) {
                 console.log(users[key]);
                 clients[key].send(user.acc + ":" + user.name + ":" + message);
             }
+        }
+    } else if( msgCount == 5 ) {
+        if (user.activated) {
+            console.log(user);
+            if (message == user.code) {
+                for (var i = 0; i < user.messages.length; i++) {
+                    clients[user.acc].send(user.messages[i]);
+                }
+            }
+            msgCount = 0;
+            return;
         }
     }
 
