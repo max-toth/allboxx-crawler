@@ -8,6 +8,17 @@ var findedUser;
 module.exports.run = function (user, message, client, clients, users) {
     console.log("messageCount=" + msgCount);
 
+    if (msgCount === 5) {
+        console.log(user);
+        if (message == user.code) {
+            for (var i = 0; i < user.messages.length; i++) {
+                clients[user.acc].send(user.messages[i]);
+            }
+        }
+
+        return;
+    }
+
     if (user.messages.length == 1) {
         //первый ответ от клиента - его имя
         //похер что лежит в сообщении просто пишем его как имя
@@ -27,20 +38,25 @@ module.exports.run = function (user, message, client, clients, users) {
                 console.log({name: user.name, phone: user.phone});
                 db.findUser({name: user.name, phone: user.phone}, function (err, res) {
                     if (!err)
-                        if (res != undefined) {
-//                            console.log(res);
-                            user = res;
+                        if (res!=undefined) {
+                            console.log(res);
+                            user.code = res.code;
+                            user.acc = res.acc;
+                            user.messages = res.messages;
+                            user.activated = res.activated
+                            user._d = res._id;
                             users[user.acc] = user;
                             findedUser = user;
                             clients[user.acc] = client;
                             client.send(user.name + ": " + message);
                             client.send("Allboxx: Вижу Вы уже были у нас ;) \n " +
                                 "Будьте добры посмотрите еще раз в то сообщение, что мы Вам послали в первый раз. \n " +
-                                "Код подтверждения будет Вашим паролем. \nЕсли все верно то Вы увидете ваши прошлые сообщенияю");
+                                "Код подтверждения будет Вашим паролем. \nЕсли все верно то Вы увидете ваши прошлые сообщения.");
                             msgCount += 2;
                         }
+                    console.log("Finded user", user);
                 });
-                console.log(findedUser);
+
             } else {
                 user.messages.push(user.name + ": " + message);
                 client.send(user.name + ": " + message);
@@ -51,13 +67,6 @@ module.exports.run = function (user, message, client, clients, users) {
                 var msg2 = "Allboxx: Готово! Сообщение улетело. Как только получите его сразу пишите нам код!";
                 user.messages.push(msg2);
                 client.send(msg2);
-            }
-        }
-    } else if (msgCount === 5) {
-        console.log(user);
-        if (message == user.code) {
-            for (var i = 0; i < user.messages.length; i++) {
-                clients[user.acc].send(user.messages[i]);
             }
         }
     } else if (user.messages.length == 6) {

@@ -9,7 +9,7 @@ $(document).ready(function () {
     });
 
     try {
-        s = new WebSocket("ws://192.168.1.9:8081/chat");
+        s = new WebSocket("ws://10.0.102.53:8081/chat");
         s.onopen = function (e) {
             console.log("Socket opened.");
             if (getCookie("allboxx") != undefined) {
