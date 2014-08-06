@@ -88,13 +88,14 @@ webSocketServer.on('connection', function (ws) {
             message = message.substring(index + 1);
             console.log("message for " + userId, user, users[userId]);
             user = users[userId];
-            user.messages.push("Allboxx: " + message);
-            if (clients[userId] != undefined) {
+
+            if (clients[userId] != undefined && user != undefined) {
+                user.messages.push("Allboxx: " + message);
                 clients[userId].send("Allboxx: " + message);
+                db.updateUser(user, function (err, res) {
+                    console.log(res);
+                });
             }
-            db.updateUser(user, function (err, res) {
-                console.log(res);
-            });
         } else if (utils.strsta(message, "user:new:")) {
             utils.hello(clients[user.acc], user);
         } else {
