@@ -29,7 +29,7 @@ webSocketServer.on('connection', function (ws) {
 
     console.log("новое соединение ", user);
 
-    var msgCount = 1;
+    var auth = false;
 
     ws.on('message', function (message) {
         console.log('получено сообщение ' + message);
@@ -92,7 +92,7 @@ webSocketServer.on('connection', function (ws) {
             utils.hello(clients[user.acc], user);
         } else {
             console.log(user.acc + user.name + "run logic...");
-            logic.run(user, message, clients[user.acc], clients, users, msgCount);
+            logic.run(user, message, clients[user.acc], clients, users, auth);
         }
     });
 

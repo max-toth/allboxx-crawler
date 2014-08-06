@@ -5,8 +5,8 @@ var utils = new require('./allboxx_utils');
 var db = new require('./allboxx_db');
 
 var findedUser;
-module.exports.run = function (user, message, client, clients, users, msgCount) {
-    console.log("messageCount=" + msgCount);
+module.exports.run = function (user, message, client, clients, users, auth) {
+    console.log("messageCount=" + auth);
 
     if (user.messages.length == 1) {
         //первый ответ от клиента - его имя
@@ -17,7 +17,6 @@ module.exports.run = function (user, message, client, clients, users, msgCount) 
         client.send(user.name + ": " + user.name);
         utils.getPhone(client, user);
         console.log(user);
-        msgCount = 3;
     } else if (user.messages.length == 3) {
         // второе сообщение - телефон
         user.phone = utils.phoneTrim(message);
@@ -41,7 +40,7 @@ module.exports.run = function (user, message, client, clients, users, msgCount) 
                             client.send("Allboxx: Вижу Вы уже были у нас ;) \n " +
                                 "Будьте добры посмотрите еще раз в то сообщение, что мы Вам послали в первый раз. \n " +
                                 "Код подтверждения будет Вашим паролем. \nЕсли все верно то Вы увидете ваши прошлые сообщения.");
-                            msgCount = 5;
+                            user.auth = true;
                         } else if (user._id == undefined) {
                             user.messages.push(user.name + ": " + message);
                             client.send(user.name + ": " + message);
@@ -79,7 +78,7 @@ module.exports.run = function (user, message, client, clients, users, msgCount) 
             }
             client.send("set:cookie:" + user.acc);
         }
-    } else if (user.messages.length >=8 && msgCount == 0 ) {
+    } else if (user.messages.length >=8 && !auth) {
         console.log("just a message from " + user.name + " " + user.acc + " " + user.phone);
         user.messages.push(user.name + ": " + message);
         client.send(user.name + ": " + message);
@@ -89,7 +88,7 @@ module.exports.run = function (user, message, client, clients, users, msgCount) 
                 clients[key].send(user.acc + ":" + user.name + ":" + message);
             }
         }
-    } else if( msgCount == 5 ) {
+    } else if( user.auth ) {
         if (user.activated) {
             console.log(user);
             if (message == user.code) {
@@ -97,7 +96,7 @@ module.exports.run = function (user, message, client, clients, users, msgCount) 
                     clients[user.acc].send(user.messages[i]);
                 }
             }
-            msgCount = 0;
+            delete user.auth;
             return;
         }
     }
