@@ -87,12 +87,12 @@ webSocketServer.on('connection', function (ws) {
             userId = message.substring(0, index);
             message = message.substring(index + 1);
             console.log("message for " + userId, user, users[userId]);
-            user = users[userId];
+            var curUser = users[userId];
 
-            if (clients[userId] != undefined && user != undefined) {
+            if (clients[userId] != undefined && curUser != undefined) {
                 user.messages.push("Allboxx: " + message);
                 clients[userId].send("Allboxx: " + message);
-                db.updateUser(user, function (err, res) {
+                db.updateUser(curUser, function (err, res) {
                     console.log(res);
                 });
             } else {
