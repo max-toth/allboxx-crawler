@@ -29,10 +29,10 @@ webSocketServer.on('connection', function (ws) {
 
     console.log("новое соединение ", user);
 
+    var msgCount = 1;
+
     ws.on('message', function (message) {
         console.log('получено сообщение ' + message);
-
-        var msgCount = 1;
 
         if (utils.strsta(message, "uid:")) {
             if (user.operator) {
