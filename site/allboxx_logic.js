@@ -72,7 +72,7 @@ module.exports.run = function (user, message, client, clients, users, auth) {
             for (var key in users) {
                 var c = users[key];
                 if (c.operator) {
-                    console.log("user registered: " + "{user.add.list:" + JSON.stringify(user) + "}")
+                    console.log("user registered: " + "{user.connected:" + JSON.stringify(user) + "}");
                     clients[c.acc].send("user.user.connected:" + JSON.stringify(user));
                 }
             }
@@ -100,7 +100,7 @@ module.exports.run = function (user, message, client, clients, users, auth) {
             for (var key in users) {
                 var c = users[key];
                 if (c.operator) {
-                    console.log("user registered: " + "{user.connected:" + JSON.stringify(user) + "}")
+                    console.log("user registered: " + "{user.connected:" + JSON.stringify(user) + "}");
                     clients[c.acc].send("user.connected:" + JSON.stringify(user));
                 }
             }

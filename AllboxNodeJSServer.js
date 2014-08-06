@@ -36,7 +36,7 @@ webSocketServer.on('connection', function (ws) {
 
         if (utils.strsta(message, "uid:")) {
             if (user.operator) {
-                user.acc = message.substring("uid:".length)
+                user.acc = message.substring("uid:".length);
                 clients[user.acc] = ws;
                 users[user.acc] = user;
                 console.log("operator", user);
@@ -62,7 +62,7 @@ webSocketServer.on('connection', function (ws) {
                         user.phone = result.phone;
                         user.name = result.name;
                         user.messages = result.messages;
-                        user.activated = result.activated
+                        user.activated = result.activated;
                         user._id = result._id;
                         users[user.acc] = user;
                         console.log(result.messages);
@@ -72,7 +72,7 @@ webSocketServer.on('connection', function (ws) {
                         for (var key in users) {
                             var c = users[key];
                             if (c.operator) {
-                                console.log("user registered: " + "{user.connected:" + JSON.stringify(user) + "}")
+                                console.log("user registered: " + "{user.connected:" + JSON.stringify(user) + "}");
                                 clients[c.acc].send("user.connected:" + JSON.stringify(user));
                             }
                         }
