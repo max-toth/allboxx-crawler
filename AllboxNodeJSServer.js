@@ -39,12 +39,14 @@ webSocketServer.on('connection', function (ws) {
                 user.acc = message.substring("uid:".length)
                 clients[user.acc] = ws;
                 users[user.acc] = user;
-                console.log("operator", user.acc);
+                console.log("operator", user);
                 db.users(function (err, result) {
                     if (!err) {
                         // console.log(result);
-                        if (result != undefined)
+                        if (result != undefined) {
+                            console.log("user.list: " + "{user.list:" + JSON.stringify(result.length) + "}")
                             clients[user.acc].send("user.list:" + JSON.stringify(result));
+                        }
                     }
                 });
             }
