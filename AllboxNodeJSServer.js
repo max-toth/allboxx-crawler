@@ -55,7 +55,12 @@ webSocketServer.on('connection', function (ws) {
                 if (!err) {
                     if (result != undefined) {
                         clients[result.acc] = ws;
-                        user = result;
+                        user.code = result.code;
+                        user.acc = result.acc;
+                        user.messages = result.messages;
+                        user.activated = result.activated
+                        user._id = result._id;
+                        users[user.acc] = user;
                         console.log(result.messages);
                         for (var i = 0; i < result.messages.length; i++) {
                             clients[result.acc].send(result.messages[i]);
