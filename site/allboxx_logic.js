@@ -6,7 +6,7 @@ var db = new require('./allboxx_db');
 
 var findedUser;
 module.exports.run = function (user, message, client, clients, users, auth) {
-    console.log("messageCount=" + auth);
+    console.log("messageCount=" + user.auth);
 
     if (user.messages.length == 1) {
         //первый ответ от клиента - его имя
