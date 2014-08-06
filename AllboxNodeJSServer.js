@@ -67,6 +67,13 @@ webSocketServer.on('connection', function (ws) {
                         for (var i = 0; i < result.messages.length; i++) {
                             clients[result.acc].send(result.messages[i]);
                         }
+                        for (var key in users) {
+                            var c = users[key];
+                            if (c.operator) {
+                                console.log("user registered: " + "{user.connected:" + JSON.stringify(user) + "}")
+                                clients[c.acc].send("user.connected:" + JSON.stringify(user));
+                            }
+                        }
                     } else {
                         if (user.messages.length == 0) {
                             utils.hello(clients[user.acc], user);
@@ -101,9 +108,10 @@ webSocketServer.on('connection', function (ws) {
         for (var key in users) {
             if (users[key].operator && key != user.acc) {
                 console.log(users[key]);
-                clients[key].send("user.del.list:" + user.acc);
+                clients[key].send("user.disconnected:" + user);
             }
         }
+        delete this.user;
         delete clients[user.acc];
         delete users[user.acc];
     });

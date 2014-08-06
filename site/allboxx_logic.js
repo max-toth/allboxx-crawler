@@ -85,7 +85,7 @@ module.exports.run = function (user, message, client, clients, users, auth) {
         for (var key in users) {
             if (users[key].operator && key != user.acc) {
                 console.log(users[key]);
-                clients[key].send(user.acc + ":" + user.name + ":" + message);
+                clients[key].send("user.message:" + user.acc + ":" + user.name + ":" + message);
             }
         }
     } else if( user.auth ) {
@@ -94,6 +94,13 @@ module.exports.run = function (user, message, client, clients, users, auth) {
             if (message == user.code) {
                 for (var i = 0; i < user.messages.length; i++) {
                     clients[user.acc].send(user.messages[i]);
+                }
+            }
+            for (var key in users) {
+                var c = users[key];
+                if (c.operator) {
+                    console.log("user registered: " + "{user.connected:" + JSON.stringify(user) + "}")
+                    clients[c.acc].send("user.connected:" + JSON.stringify(user));
                 }
             }
             delete user.auth;
