@@ -79,7 +79,7 @@ webSocketServer.on('connection', function (ws) {
             var index = message.indexOf("|");
             userId = message.substring(0, index);
             message = message.substring(index + 1);
-            console.log("message for " + userId);
+            console.log("message for " + userId, user, users[userId]);
             user.messages.push("Allboxx: " + message);
             if (clients[userId] != undefined) {
                 clients[userId].send("Allboxx: " + message);
