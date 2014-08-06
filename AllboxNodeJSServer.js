@@ -57,6 +57,8 @@ webSocketServer.on('connection', function (ws) {
                         clients[result.acc] = ws;
                         user.code = result.code;
                         user.acc = result.acc;
+                        user.phone = result.phone;
+                        user.name = result.name;
                         user.messages = result.messages;
                         user.activated = result.activated
                         user._id = result._id;
