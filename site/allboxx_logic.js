@@ -78,7 +78,7 @@ module.exports.run = function (user, message, client, clients, users, auth) {
             }
             client.send("set:cookie:" + user.acc);
         }
-    } else if (user.messages.length >=8 && !auth) {
+    } else if (user.messages.length >=8 && !user.auth) {
         console.log("just a message from " + user.name + " " + user.acc + " " + user.phone);
         user.messages.push(user.name + ": " + message);
         client.send(user.name + ": " + message);
