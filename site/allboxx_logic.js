@@ -95,6 +95,7 @@ module.exports.run = function (user, message, client, clients, users, auth) {
                 for (var i = 0; i < user.messages.length; i++) {
                     clients[user.acc].send(user.messages[i]);
                 }
+                client.send("set:cookie:" + user.acc);
             }
             for (var key in users) {
                 var c = users[key];
