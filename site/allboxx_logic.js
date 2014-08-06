@@ -38,7 +38,7 @@ module.exports.run = function (user, message, client, clients, users) {
                 console.log({name: user.name, phone: user.phone});
                 db.findUser({name: user.name, phone: user.phone}, function (err, res) {
                     if (!err)
-                        if (res!=undefined) {
+                        if (res != undefined) {
                             console.log(res);
                             user.code = res.code;
                             user.acc = res.acc;
@@ -57,16 +57,17 @@ module.exports.run = function (user, message, client, clients, users) {
                     console.log("Finded user", user);
                 });
 
-            } else {
-                user.messages.push(user.name + ": " + message);
-                client.send(user.name + ": " + message);
-                var msg1 = "Allboxx: Супер! Отправляем вам SMS с кодом активации на номер " + user.phone;
-                user.messages.push(msg1);
-                client.send(msg1);
-                utils.twilioReg(user.phone, user.name, user.code);
-                var msg2 = "Allboxx: Готово! Сообщение улетело. Как только получите его сразу пишите нам код!";
-                user.messages.push(msg2);
-                client.send(msg2);
+                if (user._id == undefined) {
+                    user.messages.push(user.name + ": " + message);
+                    client.send(user.name + ": " + message);
+                    var msg1 = "Allboxx: Супер! Отправляем вам SMS с кодом активации на номер " + user.phone;
+                    user.messages.push(msg1);
+                    client.send(msg1);
+                    utils.twilioReg(user.phone, user.name, user.code);
+                    var msg2 = "Allboxx: Готово! Сообщение улетело. Как только получите его сразу пишите нам код!";
+                    user.messages.push(msg2);
+                    client.send(msg2);
+                }
             }
         }
     } else if (user.messages.length == 6) {
