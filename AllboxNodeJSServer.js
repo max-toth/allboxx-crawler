@@ -111,8 +111,8 @@ webSocketServer.on('connection', function (ws) {
                                 messages: result.messages,
                                 activated: result.activated,
                                 _id: result._id
-                            }
-                            user.messages.push("Allboxx: " + message);
+                            };
+                            offlineUser.messages.push("Allboxx: " + message);
                             db.updateUser(offlineUser, function (err, res) {
                                 console.log(res);
                             });
