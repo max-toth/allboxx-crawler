@@ -1,0 +1,3477 @@
+/*
+*****************************
+*   Mixins
+*****************************
+*/
+/*
+*****************************
+*   Batch class definition
+*****************************
+*/
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-0 {
+  margin-top: 0px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-0 {
+  margin-bottom: 0px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-0 {
+  margin-left: 0px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-0 {
+  margin-right: 0px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-0 {
+  padding-top: 0px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-0 {
+  padding-bottom: 0px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-0 {
+  padding-left: 0px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-0 {
+  padding-right: 0px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-1 {
+  margin-top: 1px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-1 {
+  margin-bottom: 1px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-1 {
+  margin-left: 1px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-1 {
+  margin-right: 1px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-1 {
+  padding-top: 1px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-1 {
+  padding-bottom: 1px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-1 {
+  padding-left: 1px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-1 {
+  padding-right: 1px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-2 {
+  margin-top: 2px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-2 {
+  margin-bottom: 2px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-2 {
+  margin-left: 2px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-2 {
+  margin-right: 2px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-2 {
+  padding-top: 2px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-2 {
+  padding-bottom: 2px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-2 {
+  padding-left: 2px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-2 {
+  padding-right: 2px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-3 {
+  margin-top: 3px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-3 {
+  margin-bottom: 3px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-3 {
+  margin-left: 3px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-3 {
+  margin-right: 3px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-3 {
+  padding-top: 3px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-3 {
+  padding-bottom: 3px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-3 {
+  padding-left: 3px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-3 {
+  padding-right: 3px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-4 {
+  margin-top: 4px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-4 {
+  margin-bottom: 4px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-4 {
+  margin-left: 4px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-4 {
+  margin-right: 4px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-4 {
+  padding-top: 4px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-4 {
+  padding-bottom: 4px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-4 {
+  padding-left: 4px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-4 {
+  padding-right: 4px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-5 {
+  margin-top: 5px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-5 {
+  margin-bottom: 5px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-5 {
+  margin-left: 5px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-5 {
+  margin-right: 5px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-5 {
+  padding-top: 5px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-5 {
+  padding-bottom: 5px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-5 {
+  padding-left: 5px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-5 {
+  padding-right: 5px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-6 {
+  margin-top: 6px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-6 {
+  margin-bottom: 6px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-6 {
+  margin-left: 6px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-6 {
+  margin-right: 6px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-6 {
+  padding-top: 6px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-6 {
+  padding-bottom: 6px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-6 {
+  padding-left: 6px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-6 {
+  padding-right: 6px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-7 {
+  margin-top: 7px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-7 {
+  margin-bottom: 7px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-7 {
+  margin-left: 7px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-7 {
+  margin-right: 7px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-7 {
+  padding-top: 7px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-7 {
+  padding-bottom: 7px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-7 {
+  padding-left: 7px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-7 {
+  padding-right: 7px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-8 {
+  margin-top: 8px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-8 {
+  margin-bottom: 8px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-8 {
+  margin-left: 8px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-8 {
+  margin-right: 8px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-8 {
+  padding-top: 8px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-8 {
+  padding-bottom: 8px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-8 {
+  padding-left: 8px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-8 {
+  padding-right: 8px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-9 {
+  margin-top: 9px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-9 {
+  margin-bottom: 9px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-9 {
+  margin-left: 9px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-9 {
+  margin-right: 9px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-9 {
+  padding-top: 9px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-9 {
+  padding-bottom: 9px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-9 {
+  padding-left: 9px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-9 {
+  padding-right: 9px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-10 {
+  margin-top: 10px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-10 {
+  margin-bottom: 10px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-10 {
+  margin-left: 10px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-10 {
+  margin-right: 10px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-10 {
+  padding-top: 10px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-10 {
+  padding-bottom: 10px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-10 {
+  padding-left: 10px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-10 {
+  padding-right: 10px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-11 {
+  margin-top: 11px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-11 {
+  margin-bottom: 11px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-11 {
+  margin-left: 11px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-11 {
+  margin-right: 11px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-11 {
+  padding-top: 11px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-11 {
+  padding-bottom: 11px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-11 {
+  padding-left: 11px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-11 {
+  padding-right: 11px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-12 {
+  margin-top: 12px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-12 {
+  margin-bottom: 12px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-12 {
+  margin-left: 12px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-12 {
+  margin-right: 12px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-12 {
+  padding-top: 12px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-12 {
+  padding-bottom: 12px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-12 {
+  padding-left: 12px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-12 {
+  padding-right: 12px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-13 {
+  margin-top: 13px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-13 {
+  margin-bottom: 13px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-13 {
+  margin-left: 13px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-13 {
+  margin-right: 13px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-13 {
+  padding-top: 13px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-13 {
+  padding-bottom: 13px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-13 {
+  padding-left: 13px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-13 {
+  padding-right: 13px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-14 {
+  margin-top: 14px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-14 {
+  margin-bottom: 14px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-14 {
+  margin-left: 14px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-14 {
+  margin-right: 14px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-14 {
+  padding-top: 14px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-14 {
+  padding-bottom: 14px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-14 {
+  padding-left: 14px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-14 {
+  padding-right: 14px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-15 {
+  margin-top: 15px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-15 {
+  margin-bottom: 15px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-15 {
+  margin-left: 15px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-15 {
+  margin-right: 15px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-15 {
+  padding-top: 15px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-15 {
+  padding-bottom: 15px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-15 {
+  padding-left: 15px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-15 {
+  padding-right: 15px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-16 {
+  margin-top: 16px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-16 {
+  margin-bottom: 16px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-16 {
+  margin-left: 16px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-16 {
+  margin-right: 16px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-16 {
+  padding-top: 16px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-16 {
+  padding-bottom: 16px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-16 {
+  padding-left: 16px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-16 {
+  padding-right: 16px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-17 {
+  margin-top: 17px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-17 {
+  margin-bottom: 17px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-17 {
+  margin-left: 17px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-17 {
+  margin-right: 17px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-17 {
+  padding-top: 17px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-17 {
+  padding-bottom: 17px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-17 {
+  padding-left: 17px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-17 {
+  padding-right: 17px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-18 {
+  margin-top: 18px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-18 {
+  margin-bottom: 18px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-18 {
+  margin-left: 18px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-18 {
+  margin-right: 18px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-18 {
+  padding-top: 18px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-18 {
+  padding-bottom: 18px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-18 {
+  padding-left: 18px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-18 {
+  padding-right: 18px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-19 {
+  margin-top: 19px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-19 {
+  margin-bottom: 19px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-19 {
+  margin-left: 19px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-19 {
+  margin-right: 19px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-19 {
+  padding-top: 19px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-19 {
+  padding-bottom: 19px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-19 {
+  padding-left: 19px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-19 {
+  padding-right: 19px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-20 {
+  margin-top: 20px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-20 {
+  margin-left: 20px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-20 {
+  margin-right: 20px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-20 {
+  padding-top: 20px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-20 {
+  padding-bottom: 20px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-20 {
+  padding-left: 20px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-20 {
+  padding-right: 20px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-21 {
+  margin-top: 21px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-21 {
+  margin-bottom: 21px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-21 {
+  margin-left: 21px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-21 {
+  margin-right: 21px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-21 {
+  padding-top: 21px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-21 {
+  padding-bottom: 21px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-21 {
+  padding-left: 21px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-21 {
+  padding-right: 21px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-22 {
+  margin-top: 22px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-22 {
+  margin-bottom: 22px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-22 {
+  margin-left: 22px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-22 {
+  margin-right: 22px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-22 {
+  padding-top: 22px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-22 {
+  padding-bottom: 22px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-22 {
+  padding-left: 22px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-22 {
+  padding-right: 22px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-23 {
+  margin-top: 23px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-23 {
+  margin-bottom: 23px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-23 {
+  margin-left: 23px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-23 {
+  margin-right: 23px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-23 {
+  padding-top: 23px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-23 {
+  padding-bottom: 23px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-23 {
+  padding-left: 23px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-23 {
+  padding-right: 23px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-24 {
+  margin-top: 24px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-24 {
+  margin-bottom: 24px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-24 {
+  margin-left: 24px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-24 {
+  margin-right: 24px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-24 {
+  padding-top: 24px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-24 {
+  padding-bottom: 24px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-24 {
+  padding-left: 24px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-24 {
+  padding-right: 24px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-25 {
+  margin-top: 25px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-25 {
+  margin-bottom: 25px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-25 {
+  margin-left: 25px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-25 {
+  margin-right: 25px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-25 {
+  padding-top: 25px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-25 {
+  padding-bottom: 25px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-25 {
+  padding-left: 25px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-25 {
+  padding-right: 25px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-26 {
+  margin-top: 26px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-26 {
+  margin-bottom: 26px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-26 {
+  margin-left: 26px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-26 {
+  margin-right: 26px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-26 {
+  padding-top: 26px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-26 {
+  padding-bottom: 26px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-26 {
+  padding-left: 26px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-26 {
+  padding-right: 26px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-27 {
+  margin-top: 27px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-27 {
+  margin-bottom: 27px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-27 {
+  margin-left: 27px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-27 {
+  margin-right: 27px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-27 {
+  padding-top: 27px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-27 {
+  padding-bottom: 27px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-27 {
+  padding-left: 27px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-27 {
+  padding-right: 27px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-28 {
+  margin-top: 28px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-28 {
+  margin-bottom: 28px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-28 {
+  margin-left: 28px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-28 {
+  margin-right: 28px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-28 {
+  padding-top: 28px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-28 {
+  padding-bottom: 28px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-28 {
+  padding-left: 28px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-28 {
+  padding-right: 28px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-29 {
+  margin-top: 29px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-29 {
+  margin-bottom: 29px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-29 {
+  margin-left: 29px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-29 {
+  margin-right: 29px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-29 {
+  padding-top: 29px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-29 {
+  padding-bottom: 29px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-29 {
+  padding-left: 29px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-29 {
+  padding-right: 29px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-30 {
+  margin-top: 30px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-30 {
+  margin-bottom: 30px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-30 {
+  margin-left: 30px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-30 {
+  margin-right: 30px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-30 {
+  padding-top: 30px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-30 {
+  padding-bottom: 30px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-30 {
+  padding-left: 30px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-30 {
+  padding-right: 30px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-31 {
+  margin-top: 31px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-31 {
+  margin-bottom: 31px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-31 {
+  margin-left: 31px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-31 {
+  margin-right: 31px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-31 {
+  padding-top: 31px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-31 {
+  padding-bottom: 31px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-31 {
+  padding-left: 31px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-31 {
+  padding-right: 31px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-32 {
+  margin-top: 32px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-32 {
+  margin-bottom: 32px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-32 {
+  margin-left: 32px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-32 {
+  margin-right: 32px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-32 {
+  padding-top: 32px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-32 {
+  padding-bottom: 32px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-32 {
+  padding-left: 32px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-32 {
+  padding-right: 32px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-33 {
+  margin-top: 33px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-33 {
+  margin-bottom: 33px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-33 {
+  margin-left: 33px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-33 {
+  margin-right: 33px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-33 {
+  padding-top: 33px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-33 {
+  padding-bottom: 33px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-33 {
+  padding-left: 33px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-33 {
+  padding-right: 33px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-34 {
+  margin-top: 34px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-34 {
+  margin-bottom: 34px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-34 {
+  margin-left: 34px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-34 {
+  margin-right: 34px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-34 {
+  padding-top: 34px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-34 {
+  padding-bottom: 34px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-34 {
+  padding-left: 34px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-34 {
+  padding-right: 34px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-35 {
+  margin-top: 35px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-35 {
+  margin-bottom: 35px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-35 {
+  margin-left: 35px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-35 {
+  margin-right: 35px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-35 {
+  padding-top: 35px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-35 {
+  padding-bottom: 35px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-35 {
+  padding-left: 35px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-35 {
+  padding-right: 35px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-36 {
+  margin-top: 36px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-36 {
+  margin-bottom: 36px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-36 {
+  margin-left: 36px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-36 {
+  margin-right: 36px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-36 {
+  padding-top: 36px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-36 {
+  padding-bottom: 36px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-36 {
+  padding-left: 36px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-36 {
+  padding-right: 36px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-37 {
+  margin-top: 37px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-37 {
+  margin-bottom: 37px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-37 {
+  margin-left: 37px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-37 {
+  margin-right: 37px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-37 {
+  padding-top: 37px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-37 {
+  padding-bottom: 37px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-37 {
+  padding-left: 37px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-37 {
+  padding-right: 37px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-38 {
+  margin-top: 38px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-38 {
+  margin-bottom: 38px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-38 {
+  margin-left: 38px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-38 {
+  margin-right: 38px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-38 {
+  padding-top: 38px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-38 {
+  padding-bottom: 38px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-38 {
+  padding-left: 38px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-38 {
+  padding-right: 38px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-39 {
+  margin-top: 39px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-39 {
+  margin-bottom: 39px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-39 {
+  margin-left: 39px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-39 {
+  margin-right: 39px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-39 {
+  padding-top: 39px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-39 {
+  padding-bottom: 39px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-39 {
+  padding-left: 39px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-39 {
+  padding-right: 39px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-40 {
+  margin-top: 40px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-40 {
+  margin-bottom: 40px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-40 {
+  margin-left: 40px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-40 {
+  margin-right: 40px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-40 {
+  padding-top: 40px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-40 {
+  padding-bottom: 40px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-40 {
+  padding-left: 40px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-40 {
+  padding-right: 40px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-41 {
+  margin-top: 41px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-41 {
+  margin-bottom: 41px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-41 {
+  margin-left: 41px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-41 {
+  margin-right: 41px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-41 {
+  padding-top: 41px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-41 {
+  padding-bottom: 41px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-41 {
+  padding-left: 41px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-41 {
+  padding-right: 41px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-42 {
+  margin-top: 42px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-42 {
+  margin-bottom: 42px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-42 {
+  margin-left: 42px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-42 {
+  margin-right: 42px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-42 {
+  padding-top: 42px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-42 {
+  padding-bottom: 42px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-42 {
+  padding-left: 42px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-42 {
+  padding-right: 42px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-43 {
+  margin-top: 43px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-43 {
+  margin-bottom: 43px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-43 {
+  margin-left: 43px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-43 {
+  margin-right: 43px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-43 {
+  padding-top: 43px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-43 {
+  padding-bottom: 43px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-43 {
+  padding-left: 43px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-43 {
+  padding-right: 43px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-44 {
+  margin-top: 44px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-44 {
+  margin-bottom: 44px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-44 {
+  margin-left: 44px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-44 {
+  margin-right: 44px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-44 {
+  padding-top: 44px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-44 {
+  padding-bottom: 44px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-44 {
+  padding-left: 44px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-44 {
+  padding-right: 44px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-45 {
+  margin-top: 45px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-45 {
+  margin-bottom: 45px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-45 {
+  margin-left: 45px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-45 {
+  margin-right: 45px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-45 {
+  padding-top: 45px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-45 {
+  padding-bottom: 45px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-45 {
+  padding-left: 45px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-45 {
+  padding-right: 45px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-46 {
+  margin-top: 46px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-46 {
+  margin-bottom: 46px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-46 {
+  margin-left: 46px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-46 {
+  margin-right: 46px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-46 {
+  padding-top: 46px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-46 {
+  padding-bottom: 46px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-46 {
+  padding-left: 46px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-46 {
+  padding-right: 46px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-47 {
+  margin-top: 47px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-47 {
+  margin-bottom: 47px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-47 {
+  margin-left: 47px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-47 {
+  margin-right: 47px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-47 {
+  padding-top: 47px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-47 {
+  padding-bottom: 47px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-47 {
+  padding-left: 47px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-47 {
+  padding-right: 47px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-48 {
+  margin-top: 48px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-48 {
+  margin-bottom: 48px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-48 {
+  margin-left: 48px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-48 {
+  margin-right: 48px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-48 {
+  padding-top: 48px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-48 {
+  padding-bottom: 48px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-48 {
+  padding-left: 48px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-48 {
+  padding-right: 48px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-49 {
+  margin-top: 49px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-49 {
+  margin-bottom: 49px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-49 {
+  margin-left: 49px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-49 {
+  margin-right: 49px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-49 {
+  padding-top: 49px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-49 {
+  padding-bottom: 49px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-49 {
+  padding-left: 49px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-49 {
+  padding-right: 49px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-50 {
+  margin-top: 50px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-50 {
+  margin-bottom: 50px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-50 {
+  margin-left: 50px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-50 {
+  margin-right: 50px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-50 {
+  padding-top: 50px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-50 {
+  padding-bottom: 50px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-50 {
+  padding-left: 50px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-50 {
+  padding-right: 50px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-51 {
+  margin-top: 51px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-51 {
+  margin-bottom: 51px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-51 {
+  margin-left: 51px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-51 {
+  margin-right: 51px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-51 {
+  padding-top: 51px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-51 {
+  padding-bottom: 51px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-51 {
+  padding-left: 51px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-51 {
+  padding-right: 51px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-52 {
+  margin-top: 52px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-52 {
+  margin-bottom: 52px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-52 {
+  margin-left: 52px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-52 {
+  margin-right: 52px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-52 {
+  padding-top: 52px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-52 {
+  padding-bottom: 52px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-52 {
+  padding-left: 52px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-52 {
+  padding-right: 52px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-53 {
+  margin-top: 53px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-53 {
+  margin-bottom: 53px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-53 {
+  margin-left: 53px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-53 {
+  margin-right: 53px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-53 {
+  padding-top: 53px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-53 {
+  padding-bottom: 53px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-53 {
+  padding-left: 53px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-53 {
+  padding-right: 53px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-54 {
+  margin-top: 54px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-54 {
+  margin-bottom: 54px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-54 {
+  margin-left: 54px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-54 {
+  margin-right: 54px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-54 {
+  padding-top: 54px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-54 {
+  padding-bottom: 54px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-54 {
+  padding-left: 54px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-54 {
+  padding-right: 54px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-55 {
+  margin-top: 55px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-55 {
+  margin-bottom: 55px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-55 {
+  margin-left: 55px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-55 {
+  margin-right: 55px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-55 {
+  padding-top: 55px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-55 {
+  padding-bottom: 55px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-55 {
+  padding-left: 55px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-55 {
+  padding-right: 55px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-56 {
+  margin-top: 56px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-56 {
+  margin-bottom: 56px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-56 {
+  margin-left: 56px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-56 {
+  margin-right: 56px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-56 {
+  padding-top: 56px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-56 {
+  padding-bottom: 56px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-56 {
+  padding-left: 56px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-56 {
+  padding-right: 56px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-57 {
+  margin-top: 57px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-57 {
+  margin-bottom: 57px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-57 {
+  margin-left: 57px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-57 {
+  margin-right: 57px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-57 {
+  padding-top: 57px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-57 {
+  padding-bottom: 57px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-57 {
+  padding-left: 57px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-57 {
+  padding-right: 57px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-58 {
+  margin-top: 58px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-58 {
+  margin-bottom: 58px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-58 {
+  margin-left: 58px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-58 {
+  margin-right: 58px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-58 {
+  padding-top: 58px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-58 {
+  padding-bottom: 58px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-58 {
+  padding-left: 58px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-58 {
+  padding-right: 58px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-59 {
+  margin-top: 59px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-59 {
+  margin-bottom: 59px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-59 {
+  margin-left: 59px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-59 {
+  margin-right: 59px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-59 {
+  padding-top: 59px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-59 {
+  padding-bottom: 59px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-59 {
+  padding-left: 59px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-59 {
+  padding-right: 59px !important;
+}
+
+/* line 23, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-top-60 {
+  margin-top: 60px !important;
+}
+
+/* line 24, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-bottom-60 {
+  margin-bottom: 60px !important;
+}
+
+/* line 25, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-left-60 {
+  margin-left: 60px !important;
+}
+
+/* line 26, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.margin-right-60 {
+  margin-right: 60px !important;
+}
+
+/* line 27, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-top-60 {
+  padding-top: 60px !important;
+}
+
+/* line 28, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-bottom-60 {
+  padding-bottom: 60px !important;
+}
+
+/* line 29, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-left-60 {
+  padding-left: 60px !important;
+}
+
+/* line 30, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.padding-right-60 {
+  padding-right: 60px !important;
+}
+
+/* Width (%) */
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w0 {
+  width: 0% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w2 {
+  width: 2% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w4 {
+  width: 4% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w6 {
+  width: 6% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w8 {
+  width: 8% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w10 {
+  width: 10% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w12 {
+  width: 12% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w14 {
+  width: 14.0% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w16 {
+  width: 16% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w18 {
+  width: 18% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w20 {
+  width: 20% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w22 {
+  width: 22% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w24 {
+  width: 24% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w26 {
+  width: 26% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w28 {
+  width: 28.0% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w30 {
+  width: 30% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w32 {
+  width: 32% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w34 {
+  width: 34% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w36 {
+  width: 36% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w38 {
+  width: 38% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w40 {
+  width: 40% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w42 {
+  width: 42% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w44 {
+  width: 44% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w46 {
+  width: 46% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w48 {
+  width: 48% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w50 {
+  width: 50% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w52 {
+  width: 52% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w54 {
+  width: 54% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w56 {
+  width: 56.0% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w58 {
+  width: 58.0% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w60 {
+  width: 60% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w62 {
+  width: 62% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w64 {
+  width: 64% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w66 {
+  width: 66% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w68 {
+  width: 68% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w70 {
+  width: 70% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w72 {
+  width: 72% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w74 {
+  width: 74% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w76 {
+  width: 76% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w78 {
+  width: 78% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w80 {
+  width: 80% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w82 {
+  width: 82% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w84 {
+  width: 84% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w86 {
+  width: 86% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w88 {
+  width: 88% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w90 {
+  width: 90% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w92 {
+  width: 92% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w94 {
+  width: 94% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w96 {
+  width: 96% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w98 {
+  width: 98% !important;
+}
+
+/* line 39, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.w100 {
+  width: 100% !important;
+}
+
+/* Width (px) */
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx0 {
+  width: 0px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx2 {
+  width: 2px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx4 {
+  width: 4px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx6 {
+  width: 6px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx8 {
+  width: 8px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx10 {
+  width: 10px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx12 {
+  width: 12px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx14 {
+  width: 14px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx16 {
+  width: 16px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx18 {
+  width: 18px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx20 {
+  width: 20px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx22 {
+  width: 22px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx24 {
+  width: 24px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx26 {
+  width: 26px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx28 {
+  width: 28px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx30 {
+  width: 30px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx32 {
+  width: 32px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx34 {
+  width: 34px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx36 {
+  width: 36px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx38 {
+  width: 38px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx40 {
+  width: 40px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx42 {
+  width: 42px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx44 {
+  width: 44px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx46 {
+  width: 46px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx48 {
+  width: 48px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx50 {
+  width: 50px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx52 {
+  width: 52px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx54 {
+  width: 54px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx56 {
+  width: 56px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx58 {
+  width: 58px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx60 {
+  width: 60px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx62 {
+  width: 62px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx64 {
+  width: 64px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx66 {
+  width: 66px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx68 {
+  width: 68px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx70 {
+  width: 70px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx72 {
+  width: 72px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx74 {
+  width: 74px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx76 {
+  width: 76px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx78 {
+  width: 78px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx80 {
+  width: 80px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx82 {
+  width: 82px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx84 {
+  width: 84px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx86 {
+  width: 86px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx88 {
+  width: 88px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx90 {
+  width: 90px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx92 {
+  width: 92px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx94 {
+  width: 94px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx96 {
+  width: 96px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx98 {
+  width: 98px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx100 {
+  width: 100px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx102 {
+  width: 102px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx104 {
+  width: 104px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx106 {
+  width: 106px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx108 {
+  width: 108px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx110 {
+  width: 110px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx112 {
+  width: 112px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx114 {
+  width: 114px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx116 {
+  width: 116px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx118 {
+  width: 118px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx120 {
+  width: 120px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx122 {
+  width: 122px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx124 {
+  width: 124px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx126 {
+  width: 126px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx128 {
+  width: 128px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx130 {
+  width: 130px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx132 {
+  width: 132px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx134 {
+  width: 134px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx136 {
+  width: 136px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx138 {
+  width: 138px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx140 {
+  width: 140px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx142 {
+  width: 142px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx144 {
+  width: 144px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx146 {
+  width: 146px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx148 {
+  width: 148px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx150 {
+  width: 150px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx152 {
+  width: 152px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx154 {
+  width: 154px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx156 {
+  width: 156px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx158 {
+  width: 158px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx160 {
+  width: 160px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx162 {
+  width: 162px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx164 {
+  width: 164px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx166 {
+  width: 166px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx168 {
+  width: 168px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx170 {
+  width: 170px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx172 {
+  width: 172px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx174 {
+  width: 174px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx176 {
+  width: 176px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx178 {
+  width: 178px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx180 {
+  width: 180px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx182 {
+  width: 182px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx184 {
+  width: 184px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx186 {
+  width: 186px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx188 {
+  width: 188px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx190 {
+  width: 190px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx192 {
+  width: 192px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx194 {
+  width: 194px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx196 {
+  width: 196px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx198 {
+  width: 198px !important;
+}
+
+/* line 48, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.wx200 {
+  width: 200px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-14 {
+  font-size: 14px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-15 {
+  font-size: 15px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-16 {
+  font-size: 16px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-17 {
+  font-size: 17px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-18 {
+  font-size: 18px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-19 {
+  font-size: 19px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-20 {
+  font-size: 20px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-21 {
+  font-size: 21px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-22 {
+  font-size: 22px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-23 {
+  font-size: 23px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-24 {
+  font-size: 24px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-25 {
+  font-size: 25px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-26 {
+  font-size: 26px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-27 {
+  font-size: 27px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-28 {
+  font-size: 28px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-29 {
+  font-size: 29px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-30 {
+  font-size: 30px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-31 {
+  font-size: 31px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-32 {
+  font-size: 32px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-33 {
+  font-size: 33px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-34 {
+  font-size: 34px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-35 {
+  font-size: 35px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-36 {
+  font-size: 36px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-37 {
+  font-size: 37px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-38 {
+  font-size: 38px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-39 {
+  font-size: 39px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-40 {
+  font-size: 40px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-41 {
+  font-size: 41px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-42 {
+  font-size: 42px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-43 {
+  font-size: 43px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-44 {
+  font-size: 44px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-45 {
+  font-size: 45px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-46 {
+  font-size: 46px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-47 {
+  font-size: 47px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-48 {
+  font-size: 48px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-49 {
+  font-size: 49px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-50 {
+  font-size: 50px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-51 {
+  font-size: 51px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-52 {
+  font-size: 52px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-53 {
+  font-size: 53px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-54 {
+  font-size: 54px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-55 {
+  font-size: 55px !important;
+}
+
+/* line 56, /home/mtolstykh/projects/subscription/app/assets/stylesheets/include/variables.css.scss */
+.text-56 {
+  font-size: 56px !important;
+}
+
+/* line 3, /home/mtolstykh/projects/subscription/app/assets/stylesheets/public/home.css.scss */
+.wrap-home {
+  /*
+  **********
+  * TABLES
+  **********
+  */
+}
+/* line 5, /home/mtolstykh/projects/subscription/app/assets/stylesheets/public/home.css.scss */
+.wrap-home tr.row-green {
+  background: rgba(0, 255, 0, 0.1);
+}
+/* line 8, /home/mtolstykh/projects/subscription/app/assets/stylesheets/public/home.css.scss */
+.wrap-home tr.muted {
+  color: #eeeeee;
+}
+/* line 13, /home/mtolstykh/projects/subscription/app/assets/stylesheets/public/home.css.scss */
+.wrap-home .cart_items {
+  overflow-x: auto;
+}
+/* line 17, /home/mtolstykh/projects/subscription/app/assets/stylesheets/public/home.css.scss */
+.wrap-home span.quantity {
+  margin-top: 6px;
+}
+/* line 21, /home/mtolstykh/projects/subscription/app/assets/stylesheets/public/home.css.scss */
+.wrap-home p.delivery_item_name {
+  font-weight: bold;
+  font-size: 14px !important;
+}
+/* line 33, /home/mtolstykh/projects/subscription/app/assets/stylesheets/public/home.css.scss */
+.wrap-home table.table tr:first-child td {
+  border: none;
+}
+/* line 38, /home/mtolstykh/projects/subscription/app/assets/stylesheets/public/home.css.scss */
+.wrap-home table.delivery_items td.frequency select {
+  width: 145px;
+}
+/* line 44, /home/mtolstykh/projects/subscription/app/assets/stylesheets/public/home.css.scss */
+.wrap-home table td.amount {
+  display: inline-flex;
+}
+/* line 46, /home/mtolstykh/projects/subscription/app/assets/stylesheets/public/home.css.scss */
+.wrap-home table td.amount p {
+  margin-top: 6px;
+  margin-left: 5px;
+}
+/* line 51, /home/mtolstykh/projects/subscription/app/assets/stylesheets/public/home.css.scss */
+.wrap-home table td.amount input {
+  width: 60px;
+}
