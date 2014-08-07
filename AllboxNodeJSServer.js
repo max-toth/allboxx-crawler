@@ -94,6 +94,7 @@ webSocketServer.on('connection', function (ws) {
 
             if (clients[userId] != undefined && curUser != undefined) {
                 user.messages.push("Allboxx: " + message);
+                curUser.messages.push("Allboxx: " + message);
                 clients[userId].send("Allboxx: " + message);
                 db.updateUser(curUser, function (err, res) {
                     console.log(res);
