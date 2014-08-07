@@ -100,6 +100,25 @@ webSocketServer.on('connection', function (ws) {
                     console.log(res);
                 });
             } else {
+                db.findUser({acc: userId}, function (err, result) {
+                    if (!err) {
+                        if (result != undefined) {
+                            var offlineUser = {
+                                code: result.code,
+                                acc: result.acc,
+                                phone:result.phone,
+                                name: result.name,
+                                messages: result.messages,
+                                activated: result.activated,
+                                _id: result._id
+                            }
+                            user.messages.push("Allboxx: " + message);
+                            db.updateUser(offlineUser, function (err, res) {
+                                console.log(res);
+                            });
+                        }
+                    }
+                });
                 clients[user.acc].send("user.disconnected:" + userId);
             }
         } else if (utils.strsta(message, "user:new:")) {
