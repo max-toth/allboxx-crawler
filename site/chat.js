@@ -9,7 +9,8 @@ $(document).ready(function () {
     });
 
     try {
-        var amazon = "54.200.85.175";
+//        var amazon = "54.200.85.175";
+        var amazon = "allboxx.com";
         var dev = "10.0.102.53";
         s = new WebSocket("ws://"+amazon+":8081/chat");
         s.onopen = function (e) {
