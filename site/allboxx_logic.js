@@ -62,7 +62,7 @@ module.exports.run = function (user, message, client, clients, users, auth) {
         if (message == user.code) {
             user.activated = true;
             client.send(user.name + ": " + message);
-            var msg3 = "Allboxx: Это просто замечательно! Вы активировали вашу подписку!" +
+            var msg3 = "Allboxx: Это просто замечательно! Вы активировали вашу подписку! " +
                 "Сейчас я схожу позову кого-нибудь из людей. А пока вы можете начать писать все то, " +
                 "что хотели бы найти в нашей коробке после доставки ;) Удачи!";
             client.send(msg3);
