@@ -44,12 +44,12 @@ $(document).ready(function () {
             } else if (e.data.substring(0, prefix.length) === prefix) {
                 div.setAttribute("class", "message message--allboxx");
                 $('#messages').append(div);
-                var m = document.getElementById("messages");
+                var m = document.getElementById("chat-scrollbar");
                 m.scrollTop = m.scrollHeight;
             } else {
                 div.setAttribute("class", "message");
                 $('#messages').append(div);
-                var m = document.getElementById("messages");
+                var m = document.getElementById("chat-scrollbar");
                 m.scrollTop = m.scrollHeight;
             }
         };
