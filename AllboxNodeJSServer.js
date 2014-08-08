@@ -47,6 +47,7 @@ webSocketServer.on('connection', function (ws) {
 //                            console.log(clients);
                             console.log("user.list: " + "{user.list:" + JSON.stringify(result.length) + "}");
                             ws.send("user.list:" + JSON.stringify(result));
+                            console.log("user.list: sended ...");
                         }
                     }
                 });
