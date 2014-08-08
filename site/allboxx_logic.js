@@ -74,11 +74,12 @@ module.exports.run = function (user, message, client, clients, users, auth) {
                 if (c.operator) {
                     console.log("user registered: " + "{user.connected:" + JSON.stringify(user) + "}");
                     clients[c.acc].send("user.user.connected:" + JSON.stringify(user));
+                    utils.signal(user.name, user.phone);
                 }
             }
             client.send("set:cookie:" + user.acc);
         }
-    } else if (user.messages.length >=8 && !user.auth) {
+    } else if (user.messages.length >= 8 && !user.auth) {
         console.log("just a message from " + user.name + " " + user.acc + " " + user.phone);
         user.messages.push(user.name + ": " + message);
         client.send(user.name + ": " + message);
@@ -88,7 +89,7 @@ module.exports.run = function (user, message, client, clients, users, auth) {
                 clients[key].send("user.message:" + user.acc + ":" + user.name + ":" + message);
             }
         }
-    } else if( user.auth ) {
+    } else if (user.auth) {
         if (user.activated) {
             console.log(user);
             if (message == user.code) {

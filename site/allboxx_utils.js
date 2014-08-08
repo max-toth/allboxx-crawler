@@ -86,3 +86,19 @@ module.exports.twilioReg = function (phone, name, code) {
         console.log("twillo message ", message);
     });
 };
+
+module.exports.signal = function (name, phone) {
+    var accountSid = 'AC3ca6c387eb9a625ae00bcb58600df5ba';
+    var authToken = "36956d4fd14b2943075a7fd0317184b6";
+    var twilio = require('twilio');
+    var client = new twilio.RestClient(accountSid, authToken);
+
+    client.messages.create({
+        body: "Новый пользователь " + name + " " + phone,
+        to: "+79213061049",
+        from: "+15083324849"
+    }, function (err, message) {
+        console.log("error ", err);
+        console.log("twillo message ", message);
+    });
+};
