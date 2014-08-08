@@ -31,8 +31,12 @@ $(document).ready(function () {
         s.onmessage = function (e) {
             console.log("Socket message:", e.data);
             var div = document.createElement("div");
-            div.innerHTML = e.data;
             var prefix = "Allboxx:";
+            var i = e.data.indexOf(":");
+            var who = e.data.substring(0, i);
+            who = "<b><i>" + who + "</i></b>";
+            var msg = e.data.substring(i);
+            div.innerHTML = who + msg;
             var prefix_cookie = "set:cookie:";
 
             if (e.data.substring(0, prefix_cookie.length) === prefix_cookie) {
@@ -47,7 +51,7 @@ $(document).ready(function () {
                 $('#messages').append(div);
                 var m = document.getElementById("messages");
                 m.scrollTop = m.scrollHeight;
-            }            
+            }
         };
 
         s.onerror = function (e) {
